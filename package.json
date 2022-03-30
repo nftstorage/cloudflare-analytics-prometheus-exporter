@@ -1,0 +1,32 @@
+{
+  "name": "cloudflare-analytics-prometheus-exporter",
+  "version": "1.0.0",
+  "description": "A tool to gather cloudflare analytics from its GraphQL API and serve it in Prometheus format",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=exporter:* node bin/start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "author": "Vasco Santos",
+  "license": "(Apache-2.0 OR MIT)",
+  "dependencies": {
+    "debug": "^4.3.3",
+    "delay": "^4.3.3",
+    "dotenv": "^16.0.0",
+    "graphql-request": "^4.2.0",
+    "it-pipe": "^2.0.3",
+    "prom-client": "^14.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nftstorage/cloudflare-analytics-prometheus-exporter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nftstorage/cloudflare-analytics-prometheus-exporter/issues"
+  },
+  "homepage": "https://github.com/nftstorage/cloudflare-analytics-prometheus-exporter#readme"
+}
