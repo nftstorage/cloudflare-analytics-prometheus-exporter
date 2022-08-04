@@ -66,7 +66,7 @@ async function logResult(source) {
     log(`incremented ${res.requests} requests`)
     log(`incremented ${res.cachedRequests} cached requests`)
     log(`incremented ${res.firewallBlockedRequests} firewall blocked requests`)
-    Object.keys(res.contentTypeRequests).forEach(key => {
+    res.contentTypeRequests && Object.keys(res.contentTypeRequests).forEach(key => {
       log(`incremented content type ${key} with ${res.contentTypeRequests[key]} requests`)
     })
   }

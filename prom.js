@@ -55,7 +55,7 @@ export function recordMetrics(metrics) {
       metrics.firewallBlocked.inc(firewallBlockedRequests)
 
       // Increment request counts for each content type
-      Object.keys(contentTypeRequests).forEach(type => {
+      contentTypeRequests && Object.keys(contentTypeRequests).forEach(type => {
         metrics.requestsByContentTypeTotal.inc({ type }, contentTypeRequests[type])
       })
 
